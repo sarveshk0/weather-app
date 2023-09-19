@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="wrapper">
+    <h1>Weather App</h1>
+     
+    <div class="tab-container">
+        <div class="tab" data-userWeather>Your Weather</div>
+        <div class="tab" data-searchWeather>Search weather</div>
+    </div>
+
+    <div class="weather-container">
+
+        <!-- grant location container -->
+        <div class=" sub-container grant-location-container">
+          <img src="./assets/11-110987_circle-icons-location-icons-of-location.webp" width="88" height="88" loading="lazy">
+          <p>Grant location Access</p>
+          <p>Allow Access to get weather Information</p>
+          <button class="btn" data-grantAccess>Grant Access</button>
+        </div>
+        
+        <!-- Serch form  form conatiner -->
+   <form class="form-container" data-searchForm>
+    <input placeholder="search for city" data-searchInput>
+    <button class="btn"  type="submit">
+        <img src="./assets/428-4289518_search-icon-search-icon-white-background.webp" width="20" height="20" loading="lazy">                                        
+    </button>
+    
+  </form>
+
+    
+<!--  loading screen conatiner -->
+<div class=" sub-container loading-container">
+  <img src="./assets/Tag-For-Loading-Bar-Gif-Transparent-Loading-Gif-.gif" height="100" width="100" loading="lazy">
+   <p>Loading</p>
+</div>
+
+
+<!-- show weather info -->
+<div class=" sub-container user-info-container">
+ <!-- city name and flag -->
+<div class="name">
+  <p data-cityName></p>
+  <img data-countryIcon>
+</div>
+<!-- wether description -->
+<p data-weatherDesc></p>
+<!-- wethericon -->
+<img data-weatherIcon>
+<!-- temperture -->
+<p data-temp></p>
+
+<!-- 3-cards parameters -->
+<div class="parameter-container">
+  <!-- card1 -->
+  <div class="parameter">
+      <img src="./assets/windy-weather--v2.webp">
+    <p>windSpeed</p>
+    <p data-windspeed></p>
+  </div>
+
+   <!-- card2 -->
+   <div class="parameter">
+      <img src="./assets/humidity.webp" height="50" width="50">
+    <p>Humidity</p>
+    <p data-humidity></p>
+  </div>
+
+   <!-- card3 -->
+   <div class="parameter">
+      <img src="./assets/clouds.webp "height="50" width="50">
+    <p>Clouds</p>
+    <p data-cloudiness></p>
+  </div>
+    </div>
+
+   
+
+
+</div>
+</div>
+
+
+
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
